@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
+  ~                    Version 2, December 2004
+  ~
+  ~ Copyright (c) 2016.  Aner Torre <anernaiz@gmail.com>
+  ~
+  ~ Everyone is permitted to copy and distribute verbatim or modified
+  ~ copies of this license document, and changing it is allowed as long
+  ~ as the name is changed.
+  ~
+  ~            DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
+  ~   TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION
+  ~
+  ~  0. You just DO WHAT THE FUCK YOU WANT TO.
+  ~
+  -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.anrapps.test.autosystemapp.ActivityMain">
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Permission status: GRANTED" />
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text1"
+        android:layout_marginTop="16dp"
+        android:text="THIS READY TO WORK"
+        android:textColor="@android:color/holo_green_light"/>
+
+    <Button
+        android:id="@+id/button_granted"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Remove from system" />
+
+</RelativeLayout>

@@ -28,7 +28,24 @@
     tools:context="com.anrapps.test.autosystemapp.ActivityMain">
 
     <TextView
+        android:id="@+id/text1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:text="Permission status: DENIED" />
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text1"
+        android:layout_marginTop="16dp"
+        android:text="THIS APP WONT WORK UNLESS IS INSTALLED IN /system/priv-app/"
+        android:textColor="@android:color/holo_red_light"/>
+
+    <Button
+        android:id="@+id/button_denied"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Move to system" />
 </RelativeLayout>
